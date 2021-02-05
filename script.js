@@ -48,7 +48,7 @@ btnSetUp.addEventListener("click", setUp);
 
 function addMore(){
     let addNumber = prompt("Inserisci il numero da aggiungere al conto \nAggiungere \"-\" davanti al numero per sottrarre");
-    addNumber2 = Number(addNumber)
+    addNumber2 = Math.floor(Number(addNumber));
     let check = Number.isNaN(addNumber2);
     if(check === true){
         alert("Inserire un NUMERO");
