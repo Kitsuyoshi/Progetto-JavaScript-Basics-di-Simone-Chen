@@ -42,6 +42,12 @@ function setUp(){
     }
 
     conteggio.textContent = number;
+    
+    if(number < 0){
+        number = 0;
+        alert("Il conteggio non può andare sotto lo zero")
+        conteggio.textContent = number;
+    }
 }
 
 btnSetUp.addEventListener("click", setUp);
