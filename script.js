@@ -34,7 +34,7 @@ btnReset.addEventListener("click", reset);
 
 function setUp(){
     let start = prompt("Imposta il numero da cui iniziare");
-    number = Number(start);
+    number = Math.floor(Number(start));
     let check = Number.isNaN(number);
     if(check === true){
         number = 0;
